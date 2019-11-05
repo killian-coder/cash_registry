@@ -23,18 +23,22 @@ public class First_app {
         double price;
         double vat;
         
+       
+        
         total_price = 0;
-        price = 2;
+        //price = 0;
         vat =16;
         Scanner scan = new Scanner(System.in);  // Create a Scanner object
          System.out.println("Enter  the price of the item");
-         sum =  scan.nextDouble();
+         price =  scan.nextDouble();
+         
         if(price>10){
             sum = (vat/100)* price;
             total_price = sum  +price;
             System.out.println("you have reached the Tax trashholder your total price is :"+total_price);
         }else
         {
+         sum = (vat/100)* price;
          total_price = sum + price;
          System.out.println("you are not taxed , Your total price is : "+total_price);
         }
